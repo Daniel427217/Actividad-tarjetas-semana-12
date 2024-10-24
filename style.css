@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;  /*Fuente de letra*/
+    margin: 0; /*Margen para los lados o bordes de la pagina*/ 
+    background-color: rgb(24, 21, 21); /*Color del fondo de la pagina*/
+    color: antiquewhite; /*Color de la letra generalizado para toda la pagina*/
+}
+
+.contenedor {
+    display: flex; /*Nos permite darle un estilo dinamico a las tarjetas o elementos*/
+    flex-wrap: wrap; /* Permite que los elementos no se desborden si no hay suficiente espacio*/
+    justify-content: space-around; /* Disbruye las tarjetas con un espacio equitativo entre ellas*/
+    padding: 20px; /* Nos agrega un espacio interno entre los contenedores*/
+}
+
+.tarjeta {
+    width: 300px;  /*Nos da el ancho que tendra cada tarjeta*/
+    margin: 10px; /*Separa las tarjetas por medio de la margen de 10 pixeles*/
+    border: 1px solid #ccc; /* Le agrega los bordes de 1 pixel a cada tarjeta */
+    padding: 20px; /* Nos agrega un espacio de 20 pixeles entre el borde y el contenido de cada tarjeta*/
+    border-radius: 5px; /* Redondea los esquinas de las tarjetas */
+    box-shadow: 10px 10px 10px rgba(255, 255, 0, 0.1); /*Le da una sombra a cada tarjeta*/
+}
+
+.tarjeta img {
+    width: 100%; /* Hace que la imagen ocupe el 100% del ancho de cada tarjeta*/
+    height: auto; /* Hace que se mantenga la proporción de la imagen más que todo en la altura*/
+    display: block; /* Logra que la imagen ocupe todo el espacio y que el siguiente contenido siga en otra linea y por ende no se pueda poner ningun tipo de texto hacia sus lados*/
+    border-radius: 5px 5px 0 0; /*Redondea las esquinas de la imagen*/
+}
